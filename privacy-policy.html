@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tansu — Privacy Policy / 隐私政策</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --fg: #1c1c1e;
+      --muted: #636366;
+      --card: #f2f2f7;
+      --accent: #007aff;
+      --green: #1e8e3e;
+      --border: #e5e5ea;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --fg: #f2f2f7;
+        --muted: #aeaeb2;
+        --card: #1c1c1e;
+        --accent: #0a84ff;
+        --green: #34c759;
+        --border: #2c2c2e;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px 18px 64px;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Helvetica Neue", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.8rem;
+      letter-spacing: -0.02em;
+    }
+    h2 {
+      margin-top: 28px;
+      font-size: 1.2rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--green) 14%, transparent);
+      color: var(--green);
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 8px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin: 18px 0;
+    }
+    ul { padding-left: 20px; }
+    li { margin: 6px 0; }
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 40px 0;
+    }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Tansu Privacy Policy</h1>
+      <span class="badge">Data Not Collected</span>
+      <p class="meta">Effective Date: 2026-11-22 · Applies to Tansu for iOS &amp; iPadOS (<code>com.cyx.tansu</code>)</p>
+    </header>
+
+    <div class="card">
+      <strong>Summary:</strong> Tansu is a 100% offline local file manager, archive utility, and document reader. We do not collect, store, transmit, sell, or share any personal data, user files, analytics, or crash reports.
+    </div>
+
+    <h2>1. Data Collection</h2>
+    <p>Tansu collects <strong>zero</strong> personal data. In accordance with Apple App Store privacy guidelines, Tansu declares <strong>Data Not Collected</strong>. There are no user accounts, no cloud syncing, no advertising networks, and no third-party analytics or telemetry SDKs.</p>
+
+    <h2>2. Local-Only File Storage</h2>
+    <p>All files you import, organize, extract, preview, or pack remain exclusively on your device inside Tansu's app sandbox and local App Group container (<code>group.com.cyx.tansu</code>). Deleting a file in Tansu permanently removes it from local storage.</p>
+
+    <h2>3. Wi-Fi Transfer (Local Network Only)</h2>
+    <p>When you explicitly enable Wi-Fi Transfer, Tansu starts a temporary local HTTP server on your current Wi-Fi network protected by a one-time 6-digit passcode. Files transfer directly between your device and your browser over your LAN and never pass through external servers. The server stops automatically when you leave the Wi-Fi Transfer screen or background the app.</p>
+
+    <h2>4. Passwords, Passcodes &amp; Biometrics</h2>
+    <ul>
+      <li>Archive passwords and Wi-Fi Transfer passcodes are held only in volatile memory during active operations and are never written to disk, <code>UserDefaults</code>, or logs.</li>
+      <li>Optional App Lock uses Apple's on-device <code>LocalAuthentication</code> framework (Face ID, Touch ID, Optic ID, or Device Passcode). Tansu never receives or stores biometric data.</li>
+    </ul>
+
+    <h2>5. Device Permissions</h2>
+    <ul>
+      <li><strong>Photos (Read / Add Only):</strong> Used solely when you import media from Photos or export images, videos, and Live Photos back to your Photo Library.</li>
+      <li><strong>Local Network:</strong> Used solely when you start Wi-Fi Transfer on your local network.</li>
+      <li><strong>Face ID / Touch ID:</strong> Used solely when you enable optional App Lock in Settings.</li>
+    </ul>
+
+    <h2>6. Offline WebView Protection</h2>
+    <p>Built-in Markdown and eBook readers (EPUB, FB2, MOBI, AZW3, CHM) render local files strictly offline and block outbound network requests.</p>
+
+    <h2>7. Contact</h2>
+    <p>If you have questions about this Privacy Policy, please contact the developer via the support contact listed on the Tansu App Store page.</p>
+
+    <hr>
+
+    <header>
+      <h1>Tansu 隐私政策</h1>
+      <span class="badge">不收集任何数据</span>
+      <p class="meta">生效日期：2026-11-22 · 适用于 Tansu iOS / iPadOS 版（<code>com.cyx.tansu</code>）</p>
+    </header>
+
+    <div class="card">
+      <strong>摘要：</strong>Tansu 是一款 100% 离线的本地文件管理、解压打包与电子书阅读工具。我们不收集、不存储、不传输、不出售也不共享任何个人数据、用户文件、使用统计或崩溃日志。
+    </div>
+
+    <h2>1. 数据收集声明</h2>
+    <p>Tansu <strong>不收集任何个人数据</strong>，与 App Store 隐私标签「不收集数据（Data Not Collected）」完全一致。本应用无账号体系、无云端同步、无广告、无第三方统计或追踪 SDK。</p>
+
+    <h2>2. 纯本地存储</h2>
+    <p>您导入、一键归组、解压、预览或打包的所有文件均仅保存在设备本地的 App 沙盒与本地 App Group 容器（<code>group.com.cyx.tansu</code>）中。在 Tansu 内删除文件即直接从本地移除。</p>
+
+    <h2>3. Wi-Fi 传输（仅局域网）</h2>
+    <p>仅当您手动开启 Wi-Fi 传输时，Tansu 才会在当前局域网内启动临时本地 HTTP 服务，并由 6 位一次性口令保护。文件在您的设备与浏览器之间点对点传输，不经过任何外部服务器；离开传输页面或退回后台时服务会自动关闭。</p>
+
+    <h2>4. 密码、口令与生物识别</h2>
+    <ul>
+      <li>压缩包密码与 Wi-Fi 传输口令仅在当次操作的内存中短暂保存，绝不写入磁盘、<code>UserDefaults</code> 或日志。</li>
+      <li>可选的应用锁功能完全依赖 Apple 设备端 <code>LocalAuthentication</code>（面容 ID / 触控 ID / 设备密码），Tansu 不会获取或存储任何生物特征数据。</li>
+    </ul>
+
+    <h2>5. 系统权限说明</h2>
+    <ul>
+      <li><strong>相册权限：</strong>仅在您主动从相册导入或导出图片、视频、实况照片时使用。</li>
+      <li><strong>本地网络权限：</strong>仅在您主动开启局域网 Wi-Fi 传输时使用。</li>
+      <li><strong>面容 ID / 触控 ID：</strong>仅在您在「更多 → 安全」中手动开启应用锁时使用。</li>
+    </ul>
+
+    <h2>6. 联系我们</h2>
+    <p>如对本隐私政策有任何疑问，请通过 Tansu 在 App Store 商店页面提供的开发者支持联系方式与我们联系。</p>
+  </main>
+</body>
+</html>
